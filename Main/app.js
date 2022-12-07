@@ -94,8 +94,9 @@ HackLogs.push(
          document.body.appendChild(varNm);
          
       };
-      const chooseHackButton = document.createElement("button");
-      makeElem(chooseHackButton, "Load Hack", "25px", "20px", "99px");
+      fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/buttons/choosehackbutton.js",{mode: "cors"})
+              .then((res) => res.text()
+              .then((t) => eval(t)))
      
      
       const checklvlButton = document.createElement("button");
