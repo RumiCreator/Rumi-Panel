@@ -24,3 +24,11 @@ function makeElem(varNm, it, st, sl, w) {
 };
 const chooseHackButton = document.createElement("button");
 makeElem(chooseHackButton, "Load Hack", "25px", "20px", "99px");
+
+chooseHackButton.onclick = function () {
+try {
+console.log("Empty command")
+} catch {
+console.error("what the hell is wrong with Javascript!?!?!?!?")
+}
+}
