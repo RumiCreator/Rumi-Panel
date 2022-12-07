@@ -1,21 +1,5 @@
 function main() {
-  const Hacks = [
-    "crashPage":"off",
-  ]
- 
- 
-console.log(`Started! Site test ${document.location}`)
-   const Information = {
-      user: 'Name',
-      id: 'XXXX-XXXX-XXXX',
-      hackLevel: 5,
-   };
-   const user = Information.user;
-   const id = Information.id;
-   const hackLevel = Information.hackLevel;
-   const secureButton = document.createElement(
-      'button'
-   ); // Creates button, people can access this on private?
+  function createSecurityButton = {
    secureButton.style.position = 'absolute';
    secureButton.style.top = '20px';
    // Sets position, I guess most people would know that.
@@ -34,6 +18,23 @@ console.log(`Started! Site test ${document.location}`)
          };
       };
    };
+  }
+ 
+ 
+console.log(`Started! Site test ${document.location}`)
+  
+  
+   const Information = {
+      user: 'Name',
+      id: 'XXXX-XXXX-XXXX',
+      hackLevel: 5,
+   };
+   const user = Information.user;
+   const id = Information.id;
+   const hackLevel = Information.hackLevel;
+   const secureButton = document.createElement(
+      'button'
+   ); // Creates button, people can access this on private?
 
    function CreateGui() {
       alert("You are in!");
@@ -81,13 +82,18 @@ console.log(`Started! Site test ${document.location}`)
       // Crash page button, please use at your own risk.
       const CrashPage = document.createElement("button");
       makeElem(CrashPage, "Crash Page!", "100px", "20px", "99px");
-       
-      Hacks["crashPage"] = "on";
+      
 
       CrashPage.onclick = function() {
-         while (true) {
+        try {
+         
+          while (true) {
             console.log("Crashed page, succesfully!");
          }
+        } catch {
+          console.error("_Error_ RumiPanel couldn't proccess the hack.");
+          alert("There was a problem executing this button");
+        } 
       }
      
 
