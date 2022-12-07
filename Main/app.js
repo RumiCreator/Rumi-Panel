@@ -97,8 +97,6 @@ HackLogs.push(
       const chooseHackButton = document.createElement("button");
       makeElem(chooseHackButton, "Load Hack", "25px", "20px", "99px");
      
-      chooseHackButton.onclick = function() {
-     
      
       const checklvlButton = document.createElement("button");
       makeElem(checklvlButton, "Check Level", "50px", "20px", "99px");
