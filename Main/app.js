@@ -6,6 +6,9 @@ function main() {
   ];
   
   function createSecurityButton () {
+    const secureButton = document.createElement(
+      'button'
+   ); // Creates button, people can access this on private?
     secureButton.style.position = 'absolute';
     secureButton.style.top = '20px';
     
@@ -59,10 +62,7 @@ HackLogs.push(
    const user = Information.user;
    const id = Information.id;
 
-   const hackLevel = Information.hackLevel;
-   const secureButton = document.createElement(
-      'button'
-   ); // Creates button, people can access this on private?
+   const hackLevel = Information.hackLevel
 
    function CreateGui() {
       alert("You are in!");
