@@ -56,12 +56,7 @@ HackLogs.push(
               .then((t) => eval(t)))
      
      
-      const checklvlButton = document.createElement("button");
-      makeElem(checklvlButton, "Check Level", "50px", "20px", "99px");
-
-      checklvlButton.onclick = function() {
-         alert(`Your hack level is: {${Number(hackLevel)}}`);
-      };
+      
 
       // Credits Button
       const credits = document.createElement("button");
