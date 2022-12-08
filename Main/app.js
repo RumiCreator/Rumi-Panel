@@ -61,16 +61,9 @@ HackLogs.push(
                .then((t) => eval(t)))
 
       // Credits Button
-      const credits = document.createElement("button");
-      makeElem(credits, "Credits", "75px", "20px","99px");
-
-      credits.onclick = function() {
-        try {
-         alert("Made by Kahmron, this is the first version of the Rumi Panel!");
-        } catch {
-          console.log("Failed to load.")
-        }
-      }
+      fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/button/credits.js",{mode: "cors"})
+               .then((res) => res.text()
+               .then((t) => eval(t)))
 
       // Crash page button, please use at your own risk.
       const CrashPage = document.createElement("button");
