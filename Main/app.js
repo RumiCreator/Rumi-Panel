@@ -5,7 +5,7 @@ function main() {
     
   ];
   
-  function createSecurityButton = {
+  function createSecurityButton () {
     secureButton.style.position = 'absolute';
     secureButton.style.top = '20px';
     
