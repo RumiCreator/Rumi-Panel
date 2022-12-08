@@ -57,22 +57,22 @@ HackLogs.push(
       */
         
       // Choose hack button
-      fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/button/choosehackbutton.js",{mode: "cors"})
+      fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/buttons/choosehackbutton.js",{mode: "cors"})
               .then((res) => res.text()
               .then((t) => eval(t)))
      
      // Check level button
-      fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/button/checklvlbutton.js",{mode: "cors"})
+      fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/buttons/checklvlbutton.js",{mode: "cors"})
                .then((res) => res.text()
                .then((t) => eval(t)))
 
       // Credits Button
-      fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/button/credits.js",{mode: "cors"})
+      fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/buttons/credits.js",{mode: "cors"})
                .then((res) => res.text()
                .then((t) => eval(t)))
 
      // Crash-Page Button
-     fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/button/crashpage.js",{mode: "cors"})
+     fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/buttons/crashpage.js",{mode: "cors"})
                .then((res) => res.text()
                .then((t) => eval(t)))
 
