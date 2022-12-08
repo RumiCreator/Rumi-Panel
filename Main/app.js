@@ -1,5 +1,9 @@
 function main() {
-     
+
+const HackLogs = [
+
+];     
+
 console.log(`Started! Site test ${document.location}`);
 HackLogs.push(
 ["ServerMessage",`Session started: ${Date()}`]
