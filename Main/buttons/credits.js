@@ -1,1 +1,1 @@
-
+const credits = document.createElement("button"); makeElem(credits, "Credits", "75px", "20px","99px"); credits.onclick = function() { try { alert("Made by Kahmron, this is the first version of the Rumi Panel!"); } catch { console.log("Failed to load.") } }
