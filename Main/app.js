@@ -47,11 +47,8 @@ createSecurityButton();
  
 console.log(`Started! Site test ${document.location}`);
 HackLogs.push(
-   [
-    {"ServerMessage", 
-     toString(Date()) },
-    "Session started"]
-  )
+["ServerMessage",`Session started: ${Date()}`]
+)
   
   
    const Information = [
