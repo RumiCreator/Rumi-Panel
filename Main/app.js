@@ -2,7 +2,7 @@ function main() {
      const Information = [
       ["User","test"],
       ["id","test"],
-      ["hackLevel",Infinity],
+      ["hackLevel",6.1],
    ];
    const user = Information.user;
    const id = Information.id;
@@ -52,12 +52,16 @@ HackLogs.push(
          
       };
         
-      /* https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/ */
+      /* https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/ 
+      DO NOT EDIT ANYWHERE BELOW THIS, THIS WILL CAUSE EVERYTHING TO BREAK.
+      */
+        
+      // Choose hack button
       fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/buttons/choosehackbutton.js",{mode: "cors"})
               .then((res) => res.text()
               .then((t) => eval(t)))
      
-     
+     // Check level button
       fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/button/checklvlbutton.js",{mode: "cors"})
                .then((res) => res.text()
                .then((t) => eval(t)))
@@ -67,25 +71,10 @@ HackLogs.push(
                .then((res) => res.text()
                .then((t) => eval(t)))
 
-      // Crash page button, please use at your own risk.
-      const CrashPage = document.createElement("button");
-      makeElem(CrashPage, "Crash Page!", "100px", "20px", "99px");
-      
-
-      CrashPage.onclick = function() {
-        try {
-         // hehe, just gotta y'know crash the page >:)
-          
-          
-          while (true) {
-            console.log("Crashed page, succesfully!");
-         }
-        } catch {
-          console.error("_Error_ RumiPanel couldn't proccess the hack."); 
-          alert("There was a problem executing this button");
-        } 
-      }
-     
+     // Crash-Page Button
+     fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/button/crashpage.js",{mode: "cors"})
+               .then((res) => res.text()
+               .then((t) => eval(t)))
 
    };
     CreateGui();
