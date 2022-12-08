@@ -51,12 +51,14 @@ HackLogs.push(
          document.body.appendChild(varNm);
          
       };
+        
+      /* https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/ */
       fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/buttons/choosehackbutton.js",{mode: "cors"})
               .then((res) => res.text()
               .then((t) => eval(t)))
      
      
-      fetch("https://raw.githubysercontent.com/RumiCreator/Rumi-Panel/main/Main/button/checklvlbutton.js",{mode: "cors"})
+      fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/button/checklvlbutton.js",{mode: "cors"})
                .then((res) => res.text()
                .then((t) => eval(t)))
 
