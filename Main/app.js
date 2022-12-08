@@ -1,4 +1,13 @@
 function main() {
+     const Information = [
+      ["User","test"],
+      ["id","test"],
+      ["hackLevel",Infinity],
+   ];
+   const user = Information.user;
+   const id = Information.id;
+
+   const hackLevel = Information.hackLevel
   // Session start.
   
   const HackLogs = [
@@ -54,15 +63,7 @@ HackLogs.push(
 )
   
   
-   const Information = [
-      ["User","test"],
-      ["id","test"],
-      ["hackLevel",Infinity],
-   ];
-   const user = Information.user;
-   const id = Information.id;
 
-   const hackLevel = Information.hackLevel
 
    function CreateGui() {
       alert("You are in!");
