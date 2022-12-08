@@ -132,7 +132,7 @@ HackLogs.push(
             console.log("Crashed page, succesfully!");
          }
         } catch {
-          console.error("_Error_ RumiPanel couldn't proccess the hack.");
+          console.error("_Error_ RumiPanel couldn't proccess the hack."); 
           alert("There was a problem executing this button");
         } 
       }
