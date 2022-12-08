@@ -13,46 +13,6 @@ function main() {
   const HackLogs = [
     
   ];
-  
-  function createSecurityButton () {
-    const secureButton = document.createElement(
-      'button'
-   ); // Creates button, people can access this on private?
-    secureButton.style.position = 'absolute';
-    secureButton.style.top = '20px';
-    
-    // Sets position, I guess most people would know that.
-    secureButton.style.left = '500px';
-    secureButton.style.zIndex = '2147483647';
-    
-    secureButton.innerText = 'Run Security';
-    document.body.appendChild(secureButton);
-  
-    secureButton.onclick = function() {
-      // The click detector.
-      console.log('Button [1] was clicked: {User has entered!}}');
-      
-      const Prompt1 = prompt('User?');
-      
-      if (Prompt1 === user) {
-        
-         const Prompt2 = prompt('ID?');
-        
-         if (Prompt2 === id) {
-           
-            CreateGui();
-           
-           secureButton.remove();
-         };
-        
-        };
-      
-      };
-  
-    }
-
-createSecurityButton();
-
 
 
  
@@ -61,7 +21,6 @@ console.log(`Started! Site test ${document.location}`);
 HackLogs.push(
 ["ServerMessage",`Session started: ${Date()}`]
 )
-  
   
 
 
@@ -137,6 +96,7 @@ HackLogs.push(
      
 
    };
+    CreateGui();
 }
 
 main();
