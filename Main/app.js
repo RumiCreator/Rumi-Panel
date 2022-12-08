@@ -1,22 +1,5 @@
 function main() {
-     const Information = [
-      ["User","test"],
-      ["id","test"],
-      ["hackLevel",6.1],
-   ];
-   const user = Information.user;
-   const id = Information.id;
-
-   const hackLevel = Information.hackLevel
-  // Session start.
-  
-  const HackLogs = [
-    
-  ];
-
-
- 
- 
+     
 console.log(`Started! Site test ${document.location}`);
 HackLogs.push(
 ["ServerMessage",`Session started: ${Date()}`]
@@ -60,11 +43,6 @@ HackLogs.push(
       fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/buttons/choosehackbutton.js",{mode: "cors"})
               .then((res) => res.text()
               .then((t) => eval(t)))
-     
-     // Check level button
-      fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/buttons/checklvlbutton.js",{mode: "cors"})
-               .then((res) => res.text()
-               .then((t) => eval(t)))
 
       // Credits Button
       fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/buttons/credits.js",{mode: "cors"})
