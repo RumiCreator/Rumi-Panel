@@ -57,7 +57,7 @@ HackLogs.push(
       */
         
       // Choose hack button
-      fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/buttons/choosehackbutton.js",{mode: "cors"})
+      fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/button/choosehackbutton.js",{mode: "cors"})
               .then((res) => res.text()
               .then((t) => eval(t)))
      
