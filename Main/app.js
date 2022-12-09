@@ -55,7 +55,7 @@ HackLogs.push(
 
      // Crash-Page Button
      fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/buttons/crashpage.js",{mode: "cors"})
-               .then((res) => res.text()
+               .then((res) => res.text() 
                .then((t) => eval(t)))
 
    };
