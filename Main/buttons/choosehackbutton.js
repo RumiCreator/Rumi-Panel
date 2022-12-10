@@ -26,21 +26,21 @@ const chooseHackButton = document.createElement("button");
 makeElem(chooseHackButton, "Load Hack", "25px", "20px", "99px");
 
 const Hacks = [
-    ["Rickroll", "off",'location.href = "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiwm8-7sI72AhVGO-wKHSBgDJUQwqsBegQIBhAB&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DxvFZjo5PgG0&usg=AOvVaw1bR_FN-SnfIGtKD3fjAA5P";
-     '],
-     
+    ["Youtube","off","window.open(\"https://www.youtube.com\")"],
 ];
 
 chooseHackButton.onclick = function() {
     try {
         let pr1 = prompt("Hack?")
         Hacks.forEach((item,status,ev) => { 
-            eval(toString(ev));
-            if(status != "on") {
+          if(pr1.match(\item\gi)){
+              eval(toString(ev));
+              if(status != "on") {
                 status = "off";
-            }else{
+              }else{
                 status = "on";
-            };
+            };   
+          }
         })
     } catch {
         console.error("__couldn't run Eval?, possible forEach() function failed to proccess.")
