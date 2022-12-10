@@ -37,7 +37,7 @@ chooseHackButton.onclick = function() {
               eval(toString(ev));
               if(status != "on") {
                 status = "off";
-              }else{
+              }else{ 
                 status = "on";
             };   
           }
