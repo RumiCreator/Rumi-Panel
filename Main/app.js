@@ -58,7 +58,10 @@ HackLogs.push(
                .then((res) => res.text() 
                .then((t) => eval(t)))
      
-     
+     // Babyfy Button
+     fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/buttons/babyfy.js",{mode: "cors"})
+               .then((res) => res.text() 
+               .then((t) => eval(t)))
 
    };
     CreateGui();
