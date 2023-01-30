@@ -26,7 +26,7 @@ const chooseHackButton = document.createElement("button");
 makeElem(chooseHackButton, "Load Hack", "50px", "20px", "99px"); 
 
 const Hacks = [
-    ["Youtube","window.open(\"https://www.youtube.com\")"],
+    ["Youtube","window.open(`https://www.youtube.com`)"],
 ];
 
 chooseHackButton.onclick = function() {
@@ -34,7 +34,7 @@ chooseHackButton.onclick = function() {
         let pr1 = prompt("Hack?")
         Hacks.forEach((item,ev) => { 
           if(pr1.match(item)){
-              eval(toString(ev));
+              eval(ev);
           }
         })
     } catch {
