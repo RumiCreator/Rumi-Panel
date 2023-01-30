@@ -33,7 +33,7 @@ chooseHackButton.onclick = function() {
     try {
         let pr1 = prompt("Hack?")
         Hacks.forEach((item,ev) => { 
-          if(pr1.match(/item/gi)){
+          if(pr1.match(item)){
               eval(toString(ev));
           }
         })
