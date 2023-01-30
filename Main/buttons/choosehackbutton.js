@@ -23,7 +23,7 @@ function makeElem(varNm, it, st, sl, w) {
 
 };
 const chooseHackButton = document.createElement("button");
-makeElem(chooseHackButton, "Load Hack", "25px", "20px", "99px");
+makeElem(chooseHackButton, "Load Hack", "25px", "20px", "99px"); 
 
 const Hacks = [
     ["Youtube","off","window.open(\"https://www.youtube.com\")"],
