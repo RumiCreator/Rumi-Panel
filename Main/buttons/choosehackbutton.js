@@ -26,7 +26,7 @@ const chooseHackButton = document.createElement("button");
 makeElem(chooseHackButton, "Load Hack", "25px", "20px", "99px"); 
 
 const Hacks = [
-    ["Youtube","off","window.open(\"https://www.youtube.com\")"],
+    ["Youtube","window.open(\"https://www.youtube.com\")"],
 ];
 
 chooseHackButton.onclick = function() {
@@ -35,11 +35,6 @@ chooseHackButton.onclick = function() {
         Hacks.forEach((item,status,ev) => { 
           if(pr1.match(/item/gi)){
               eval(toString(ev));
-              if(status != "on") {
-                status = "off";
-              }else{ 
-                status = "on";
-            };   
           }
         })
     } catch {
