@@ -23,7 +23,7 @@ function makeElem(varNm, it, st, sl, w) {
 
 };
 const babyfy = document.createElement("button");
-makeElem(babyfy, "Babyfy Page", "25px", "20px", "99px");
+makeElem(babyfy, "Babyfy Page", "50px", "20px", "99px");
 
 babyfy.onclick = function() {
   for(i=0;i<100;i++){
