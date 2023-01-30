@@ -1,11 +1,8 @@
 # Rumi-Panel
-Copyright @2022 December 2 thru 2024.
+© 2008 - 2023 https://github.com/RumiCreator/Rumi-Panel - All Rights Reserved.
 
-How to use:
-
-Go to main file: copy the code, and save it as a bookmark.
-Any re-creation of this file without credits, you will be reported.
-
+In no way, may you copy any form of this code in digital, physical, and modify without the permission of the official creator, RumiCreator.
+ 
 This is 100% Javascript.
 
 Run:
