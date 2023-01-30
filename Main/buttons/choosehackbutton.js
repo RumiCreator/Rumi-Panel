@@ -32,9 +32,10 @@ const Hacks = [
 chooseHackButton.onclick = function() {
     try {
         let pr1 = prompt("Hack?")
-        if(Hacks[pr1]){
-          eval(pr1[2])
-        }
+        if(pr1=="ot"){
+            let pr2 = prompt("Tab URL? E.g. [youtube]. Will automatically add the https://, the www, and the .com DO NOT ADD THOSE!")
+            window.open("https://www.",pr2,".com")
+        };
         })
     } catch {
         console.error("__couldn't run Eval?, possible forEach() function failed to proccess.")
