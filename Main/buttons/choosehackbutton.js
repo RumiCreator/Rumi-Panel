@@ -32,10 +32,9 @@ const Hacks = [
 chooseHackButton.onclick = function() {
     try {
         let pr1 = prompt("Hack?")
-        Hacks.forEach((item,ev) => { 
-          if(pr1.match(item)){
-              eval(ev);
-          }
+        if(Hacks[pr1]){
+          eval(pr1[2])
+        }
         })
     } catch {
         console.error("__couldn't run Eval?, possible forEach() function failed to proccess.")
