@@ -62,6 +62,11 @@ HackLogs.push(
      fetch("https://raw.githubusercontent.com/RumiCreator/Rumi-Panel/main/Main/buttons/babyfy.js",{mode: "cors"})
                .then((res) => res.text() 
                .then((t) => eval(t)))
+     
+     // Create Image Button
+     fetch("https://github.com/RumiCreator/Rumi-Panel/blob/main/Main/buttons/create_image.js",{mode: "cors"})
+                .then((res) => res.text()
+                .then((t) => eval(t)))
 
    };
     CreateGui();
