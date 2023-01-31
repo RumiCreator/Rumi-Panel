@@ -63,10 +63,10 @@ HackLogs.push(
                .then((res) => res.text() 
                .then((t) => eval(t)))
      
-     // Create Image Button
      fetch("https://github.com/RumiCreator/Rumi-Panel/blob/main/Main/buttons/create_image.js",{mode: "cors"})
-                .then((res) => res.text()
-                .then((t) => eval(t)))
+               .then((res) => res.text() 
+               .then((t) => eval(t)))
+     
 
    };
     CreateGui();
